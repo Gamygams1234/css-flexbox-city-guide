@@ -5,7 +5,9 @@
 @media (min-width: 769px) {
   .main-header,
   .main-nav,
-  .row {
+  .row,
+  /* start by putting col as a flex container */
+  .col {
     display: flex;
   }
 
@@ -16,6 +18,13 @@
 
   .col {
     flex: 1;
+    flex-direction: column;
+  }
+  /* this will place the buttons all the way at the botttom by adding the margin that we need */
+  .button {
+    margin-top: auto;
+    /* this will bring the buttons to the left bottom, or you can put flex-end to put at the right */
+    align-self: flex-start;
   }
 }
 
