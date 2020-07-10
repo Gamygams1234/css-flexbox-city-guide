@@ -3,41 +3,25 @@
 ==================================== */
 
 @media (min-width: 769px) {
-  .main-nav {
+  .main-header,
+  .main-nav,
+  .row {
     display: flex;
-    justify-content: center;
   }
+
   .main-header {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /* we are making the content span a minimum of 50% and we if the content goes on the next line, then it will wrap with the flex wrap */
+
   .col {
-    flex: 1 50%;
-  }
-  /* this will scoot the secondary to the front */
-  .secondary {
-    order: -1;
+    flex: 1;
   }
 }
 
 @media (min-width: 1025px) {
   .main-header {
     flex-direction: row;
-    /* this will put our items left and right */
     justify-content: space-between;
-  }
-
-  /* this will make the stuff even again */
-  .col {
-    flex-basis: 0;
-  }
-  .primary {
-    flex-grow: 1.4;
   }
 }
