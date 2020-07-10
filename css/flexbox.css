@@ -14,11 +14,15 @@
   }
   .row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  /* this will make the column not so big */
+  /* we are making the content span a minimum of 50% and we if the content goes on the next line, then it will wrap with the flex wrap */
   .col {
-    flex: 1;
+    flex: 1 50%;
+  }
+  /* this will scoot the secondary to the front */
+  .secondary {
+    order: -1;
   }
 }
 
@@ -29,8 +33,11 @@
     justify-content: space-between;
   }
 
-  /* this will make the column twice as big when we go larger */
+  /* this will make the stuff even again */
+  .col {
+    flex-basis: 0;
+  }
   .primary {
-    flex: 2;
+    flex-grow: 1.4;
   }
 }
