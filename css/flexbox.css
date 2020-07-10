@@ -16,8 +16,9 @@
     display: flex;
     justify-content: space-between;
   }
+  /* this will make the column not so big */
   .col {
-    width: 45%;
+    flex: 1;
   }
 }
 
@@ -26,5 +27,10 @@
     flex-direction: row;
     /* this will put our items left and right */
     justify-content: space-between;
+  }
+
+  /* this will make the column twice as big when we go larger */
+  .primary {
+    flex: 2;
   }
 }
