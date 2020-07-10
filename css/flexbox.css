@@ -3,11 +3,14 @@
 ==================================== */
 
 @media (min-width: 769px) {
-
-	
-
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1025px) {
-
+  .main-header {
+    display: flex;
+  }
 }
